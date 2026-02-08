@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Universal Web Agent (Firefox MV2)",
+  "version": "0.1.0",
+  "description": "Responsible AI browser agent with capability tiers and explicit user control.",
+  "permissions": ["tabs", "activeTab", "storage", "<all_urls>"],
+  "background": {
+    "scripts": ["background.mv2.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["harborBridge.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": ["harborPage.js"],
+  "sidebar_action": {
+    "default_title": "Universal Web Agent",
+    "default_panel": "sidepanel/sidepanel.html",
+    "open_at_install": true
+  }
+}
