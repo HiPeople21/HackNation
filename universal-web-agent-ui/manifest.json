@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "AutoShop",
+  "version": "0.1.0",
+  "description": "Product search and comparison agent powered by MCP tools",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://localhost/*",
+    "http://127.0.0.1/*"
+  ],
+  "background": {
+    "scripts": [
+      "dist/background.js"
+    ]
+  },
+  "sidebar_action": {
+    "default_title": "AutoShop",
+    "default_panel": "dist/index.html"
+  },
+  "action": {
+    "default_title": "AutoShop"
+  }
+}
