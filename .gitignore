@@ -1,15 +1,50 @@
+<<<<<<< HEAD
 # Node
 node_modules/
 
 # Env
 .env
 .env.*
+=======
+# Dependencies
+node_modules/
+**/node_modules/
+.pnpm-store/
+.npm/
+.yarn/
+
+# Build / cache outputs
+dist/
+build/
+out/
+target/
+coverage/
+.turbo/
+.cache/
+.vite/
+**/.vite/
+*.tsbuildinfo
+
+# Environment / local config
+.env
+.env.*
+!.env.example
+
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+>>>>>>> 07adb81 (extension web agent)
 
 # Logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+<<<<<<< HEAD
 
 # OS
 .DS_Store
@@ -26,3 +61,14 @@ yarn-error.log*
 # Build outputs
 /dist/
 /build/
+=======
+pnpm-debug.log*
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
+>>>>>>> 07adb81 (extension web agent)
